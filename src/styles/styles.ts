@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const SidebarStyle = styled.div`
-  width: 100px;
+  width: 80px;
   height: 100%;
   position: fixed;
   overflow: scroll;
@@ -13,13 +13,13 @@ export const SidebarStyle = styled.div`
 `;
 
 export const MenuStyle = styled.div`
-  width: 300px;
+  width: 100%;
   background: ${({ theme }) => theme.base.menu};
   color: ${({ theme }) => theme.text.main};
   height: 100%;
   box-sizing: border-box;
   position: fixed;
-  margin-left: 100px;
+  margin-left: 80px;
   overflow: scroll;
   ::-webkit-scrollbar {
     display: none;
@@ -98,14 +98,20 @@ export const MenuCategoryItem = styled.div`
 `;
 
 export const IconStyle = styled.div`
-  height: 55px;
-  width: 55px;
+  height: 50px;
+  width: 50px;
   background-color: grey;
   border-radius: 50px;
+
+  transition: 0.15s;
+  :hover {
+    cursor: pointer;
+    border-radius: 16px;
+  }
 `;
 
 export const GuildIcon = styled(IconStyle)`
-  height: 60px;
-  width: 60px;
+  height: 52px;
+  width: 52px;
   margin: 5px 0px;
 `;
