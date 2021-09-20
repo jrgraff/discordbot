@@ -1,47 +1,52 @@
-import { MenuGroup } from '../utils/types'
+import { MenuGroup, MenuItem } from "../utils/types";
 
 export const menuItems = (guildId: string): MenuGroup[] => [
   {
-    name: "Teste um",
-    path: "/teste1",
+    name: "Security",
+    path: "/security",
     routes: [
       {
-        name: "Um teste",
-        path: `/dashboard/${guildId}/teste1/1`
+        name: "Authentication",
+        path: `/dashboard/${guildId}/security/authentication`,
       },
       {
-        name: "Dois testes",
-        path: `/dashboard/${guildId}/teste1/2`
+        name: "Roles",
+        path: `/dashboard/${guildId}/security/roles`,
       },
     ],
   },
   {
-    name: "Teste dois",
-    path: "/teste2",
+    name: "General",
+    path: "/general",
     routes: [
       {
-        name: "Um teste",
-        path: `/dashboard/${guildId}/teste2/1`
-      },
-      {
-        name: "Dois testes",
-        path: `/dashboard/${guildId}/teste2/2`
+        name: "General",
+        path: `/dashboard/${guildId}/general/muted`,
       },
     ],
   },
-  
   {
-    name: "Teste tres",
-    path: "/teste3",
+    name: "Miscellaneous",
+    path: "/miscellaneous",
     routes: [
       {
-        name: "Um teste",
-        path: `/dashboard/${guildId}/teste3/1`
+        name: "Commands",
+        path: `/dashboard/${guildId}/miscellaneous/fun-commands`,
       },
       {
-        name: "Dois testes",
-        path: `/dashboard/${guildId}/teste3/2`
+        name: "Levels",
+        path: `/dashboard/${guildId}/miscellaneous/levels`,
       },
     ],
   },
-]
+];
+
+export const selectMenuItems: MenuItem[] = [
+  { name: "Developer", value: "developer" },
+  { name: "Moderator", value: "moderator" },
+  { name: "Guest", value: "guest" },
+  { name: "React", value: "react" },
+  { name: "Angular", value: "angular" },
+  { name: "Node", value: "node" },
+  { name: "Java", value: "java" },
+];

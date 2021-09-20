@@ -1,18 +1,29 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
+import { ApolloClient, ApolloProvider, InMemoryCache } from '@apollo/client';
+
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter as Router } from 'react-router-dom';
+
 import { ThemeProvider } from 'styled-components';
 import { DarkTheme } from './styles/themes';
+
+const client = new ApolloClient({
+  uri: 'http://localhost:3001/api/graphql',
+  cache: new InMemoryCache(),
+  credentials: 'include',
+});
 
 ReactDOM.render(
   <React.StrictMode>
     <Router>
-      <ThemeProvider theme={DarkTheme}>
-        <App />
-      </ThemeProvider>
+      <ApolloProvider client={client}>
+        <ThemeProvider theme={DarkTheme}>
+          <App />
+        </ThemeProvider>
+      </ApolloProvider>
     </Router>
   </React.StrictMode>,
   document.getElementById('root')

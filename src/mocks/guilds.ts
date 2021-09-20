@@ -1,49 +1,84 @@
-import { Guild } from '../utils/types'
+import { Guild } from "../utils/types";
 
-export const guilds: Guild[] = [
-  {
-    id: "121",
-    name: "Mockguild1",
-    avatar: "",
-  },
-  {
-    id: "122",
-    name: "Mockguild2",
-    avatar: "",
-  },
+export const mockGuilds: Guild[] = [
   {
     id: "123",
-    name: "Mockguild3",
-    avatar: "",
+    name: "Developers",
+    icon: "",
   },
   {
     id: "124",
-    name: "Mockguild4",
-    avatar: "",
+    name: "Developers",
+    icon: "",
   },
   {
     id: "125",
-    name: "Mockguild5",
-    avatar: "",
+    name: "Developers",
+    icon: "",
   },
   {
     id: "126",
-    name: "Mockguild6",
-    avatar: "",
+    name: "Developers",
+    icon: "",
   },
   {
     id: "127",
-    name: "Mockguild7",
-    avatar: "",
+    name: "Developers",
+    icon: "",
   },
   {
     id: "128",
-    name: "Mockguild8",
-    avatar: "",
+    name: "Developers",
+    icon: "",
   },
   {
     id: "129",
-    name: "Mockguild9",
-    avatar: "",
+    name: "Developers",
+    icon: "",
   },
-]
+  {
+    id: "130",
+    name: "Developers",
+    icon: "",
+  },
+  {
+    id: "131",
+    name: "Developers",
+    icon: "",
+  },
+  {
+    id: "132",
+    name: "Developers",
+    icon: "",
+  },
+  {
+    id: "133",
+    name: "Developers",
+    icon: "",
+  },
+  {
+    id: "134",
+    name: "Developers",
+    icon: "",
+  },
+  {
+    id: "135",
+    name: "Developers",
+    icon: "",
+  },
+  {
+    id: "136",
+    name: "Developers",
+    icon: "",
+  },
+  {
+    id: "137",
+    name: "Developers",
+    icon: "",
+  },
+  {
+    id: "138",
+    name: "Developers",
+    icon: "",
+  },
+];
