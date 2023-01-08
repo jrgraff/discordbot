@@ -1,0 +1,29 @@
+type Query {
+  getUser: User
+}
+
+type Role {
+  id: String!
+  name: String!
+  permissions: String!
+  position: Int!
+  color: Int!
+}
+
+type Guild {
+  id: ID!
+  name: String!
+  icon: String
+  description: String
+  banner: String
+  owner_id: String
+  roles: [Role]
+}
+
+type User {
+  discordId: ID!
+  username: String!
+  avatar: String
+  discriminator: String!
+  guilds: [Guild]
+}
